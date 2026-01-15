@@ -1,3 +1,82 @@
 /* Your Styles Here */
 body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #fff5e6;
+    color: #c75b7a;
+    cursor: url('img/cursor.png'), auto;
 }
+
+h1 {
+    font-family: "Niconne", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+p {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+.gradient-circle {
+    width: min(100vh, 100vw);
+    height: min(100vh, 100vw);
+    border-radius: 50%;
+    background-image: radial-gradient(circle at center, #ffb3ba 10%, #fae5e7 50%,  #fff5e6 70%);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 35%;
+    height: 55%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffb3ba;
+    flex: 1;
+}
+
+
+.description {
+    flex: 2;
+    margin-left: 5%;
+}
+
+.ribbon {
+    height: 50px;
+    padding-left: 30%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    padding-right: 30%;
+}
+
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+::selection {
+    background: #ffb3ba;
+    color: #fae5e7;
+  }
+
